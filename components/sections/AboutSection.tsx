@@ -100,7 +100,7 @@ export default function AboutSection(props: SectionProps) {
                 </li>
                 <li>
                   <span className="title">Phone</span>
-                  <span className="value">+92 323 9942919</span>
+                  <span className="value">+1 (786) 837-7514</span>
                 </li>
               </ul>
             </div>

@@ -5,7 +5,7 @@ import { useEffect, useState } from "react";
 import type { SectionProps } from "./SectionProps";
 
 const CONTACT_INFO = [
-  { icon: "lnr-phone-handset", text: "+92 323 9942919" },
+  { icon: "lnr-phone-handset", text: "+1 (786) 837-7514" },
   { icon: "lnr-envelope", text: "zeeshantariq707@gmail.com" },
   { icon: "lnr-checkmark-circle", text: "Freelance Available" },
 ];
