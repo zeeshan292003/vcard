@@ -84,7 +84,7 @@ export default function AboutSection(props: SectionProps) {
               <ul>
                 <li>
                   <span className="title">Email</span>
-                  <span className="value">zeeshantariq707@gmail.com</span>
+                  <span className="value">zishtech.net@gmail.com</span>
                 </li>
                 <li>
                   <span className="title">Phone</span>

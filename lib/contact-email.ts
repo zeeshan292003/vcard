@@ -1,6 +1,6 @@
 import nodemailer from "nodemailer";
 
-const CONTACT_TO = "zeeshantariq707@gmail.com";
+const CONTACT_TO = "zishtech.net@gmail.com";
 
 export interface ContactFormPayload {
   name: string;
