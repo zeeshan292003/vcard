@@ -21,7 +21,7 @@ export async function POST(request: Request) {
     return NextResponse.json(
       {
         error:
-          "Unable to send your message right now. Please try again later or email me directly.",
+          "Unable to send your message right now. Please try again later or email us directly.",
       },
       { status: 500 }
     );

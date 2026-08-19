@@ -7,7 +7,7 @@ import type { SectionProps } from "./SectionProps";
 const CONTACT_INFO = [
   { icon: "lnr-phone-handset", text: "+1 (786) 837-7514" },
   { icon: "lnr-envelope", text: "zeeshantariq707@gmail.com" },
-  { icon: "lnr-checkmark-circle", text: "Freelance Available" },
+  { icon: "lnr-checkmark-circle", text: "Available for new projects" },
 ];
 
 const EMPTY_FORM = { name: "", email: "", subject: "", message: "" };
@@ -109,7 +109,7 @@ export default function ContactSection(props: SectionProps) {
           <div className="col-xs-12 col-sm-8">
             <div className="block-title">
               <h3>
-                How Can I <span>Help You?</span>
+                Start a <span>Project</span>
               </h3>
             </div>
 

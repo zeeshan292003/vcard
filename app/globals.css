@@ -117,8 +117,8 @@
 }
 
 .alert-success {
-  background-color: rgba(80, 80, 245, 0.15);
-  border: 1px solid #5050f5;
+  background-color: rgba(100, 84, 243, 0.15);
+  border: 1px solid #6454f3;
   color: #f5f5f5;
 }
 
@@ -126,4 +126,125 @@
   background-color: rgba(220, 53, 69, 0.15);
   border: 1px solid #dc3545;
   color: #f5f5f5;
+}
+
+/* Sidebar brand mark: square logo, not a circular portrait */
+.header-photo img {
+  background-color: transparent;
+  border: none;
+  border-radius: 12px;
+}
+
+.header-photo:after {
+  display: none;
+}
+
+:root {
+  --brand-from: #6454f3;
+  --brand-to: #c56ae8;
+  --brand-gradient: linear-gradient(90deg, var(--brand-from), var(--brand-to));
+}
+
+/* Match logo wordmark: indigo-violet → magenta-purple */
+.header-titles h2,
+.title-block h2,
+.page-title h2 span,
+.block-title h3 span,
+.info-list .title,
+.info-block-w-icon i,
+.lm-info-block i,
+.lm-info-block h4,
+.testimonial .author-info .icon,
+.form-group-with-icon.form-group-focus i,
+.form-group .form-control:focus ~ label,
+.form-group.form-group-focus .form-control ~ label,
+.fun-fact i,
+.fun-fact h4,
+.project-general-info .fa,
+ul.main-menu a.active,
+ul.main-menu a:focus,
+ul.main-menu a:hover,
+.lmpixels-arrows-nav div:hover {
+  background-image: var(--brand-gradient);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  color: transparent;
+}
+
+ul.main-menu .link-text {
+  -webkit-text-fill-color: #fff;
+  color: #fff;
+  background-image: var(--brand-gradient);
+  background-clip: border-box;
+  -webkit-background-clip: border-box;
+}
+
+body {
+  background-color: var(--brand-from);
+  background-image: var(--brand-gradient);
+}
+
+.knowledges li,
+.skills-second-style .skill-percentage,
+.skills-second-style .skill-container:before,
+.timeline-second-style .divider:before,
+.preloader-spinner,
+.menu-toggle,
+.ps:hover > .ps__scrollbar-y-rail:hover > .ps__scrollbar-y,
+.ps:hover.ps--in-scrolling.ps--y > .ps__scrollbar-y-rail > .ps__scrollbar-y,
+.testimonials.owl-carousel .owl-nav .owl-prev:hover,
+.testimonials.owl-carousel .owl-nav .owl-next:hover,
+.clients.owl-carousel .owl-nav .owl-prev:hover,
+.clients.owl-carousel .owl-nav .owl-next:hover,
+.ajax-page-nav > div.nav-item a:hover,
+.share-buttons a:hover {
+  background-color: var(--brand-from);
+  background-image: var(--brand-gradient);
+}
+
+.btn-primary,
+.btn-secondary,
+button,
+input[type="button"],
+input[type="submit"] {
+  border-color: transparent;
+  background-image: linear-gradient(#222, #222), var(--brand-gradient);
+  background-origin: border-box;
+  background-clip: padding-box, border-box;
+}
+
+.btn-primary:hover,
+.btn-primary:focus,
+button:hover,
+button:focus,
+input[type="button"]:hover,
+input[type="button"]:focus,
+input[type="submit"]:hover,
+input[type="submit"]:focus {
+  border-color: transparent;
+  background-image: var(--brand-gradient);
+  background-origin: border-box;
+  background-clip: border-box;
+  color: #fff;
+}
+
+.timeline-second-style .divider:after,
+.form-control ~ .form-control-border,
+.testimonials.owl-carousel .owl-nav .owl-prev:hover,
+.testimonials.owl-carousel .owl-nav .owl-next:hover,
+.share-buttons a:hover,
+.lmpixels-arrows-nav {
+  border-color: var(--brand-from);
+}
+
+.page-title:after,
+.block-title:after {
+  background-image: repeating-radial-gradient(
+    center center,
+    var(--brand-from),
+    var(--brand-from) 1px,
+    transparent 0,
+    transparent 100%
+  );
 }

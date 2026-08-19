@@ -10,9 +10,13 @@ export default function HomeSection(props: SectionProps) {
         <div className="row">
           <div className="col-sm-12 col-md-12 col-lg-12">
             <div className="title-block">
-              <h2>Zeeshan Tariq</h2>
+              <h2>ZISHTECH</h2>
               <TextRotation
-                items={["Full Stack Developer", "React & Node.js Engineer"]}
+                items={[
+                  "Web & Mobile Studio",
+                  "Ecommerce & Product Apps",
+                  "APIs & Integrations",
+                ]}
               />
             </div>
           </div>

@@ -9,11 +9,12 @@ import "../styles/main.css";
 import "./globals.css";
 
 export const metadata: Metadata = {
-  title: "Zeeshan Tariq - Full Stack Developer",
-  description: "Zeeshan Tariq - Full Stack Developer",
+  title: "ZISHTECH - Software Studio",
+  description:
+    "ZISHTECH is a software studio that designs and ships web apps, mobile apps, ecommerce, and third-party integrations.",
   keywords:
-    "full stack developer, web developer, frontend developer, react developer, angular developer, nextjs developer, react native developer, portfolio",
-  authors: [{ name: "Zeeshan Tariq" }],
+    "zishtech, software studio, web development, mobile apps, ecommerce, react, nextjs, react native, angular, nodejs, api integrations",
+  authors: [{ name: "ZISHTECH" }],
 };
 
 export const viewport: Viewport = {

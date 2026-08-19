@@ -7,15 +7,15 @@ import AnimatedBackground from "./AnimatedBackground";
 import Header from "./Header";
 import HomeSection from "./sections/HomeSection";
 import AboutSection from "./sections/AboutSection";
-import ResumeSection from "./sections/ResumeSection";
+import ServicesSection from "./sections/ServicesSection";
 import PortfolioSection from "./sections/PortfolioSection";
 import ContactSection from "./sections/ContactSection";
 
 const SECTION_IDS = [
   "home",
-  "about-me",
-  "resume",
-  "portfolio",
+  "about",
+  "services",
+  "work",
   "contact",
 ] as const;
 
@@ -327,9 +327,9 @@ export default function VCardApp() {
           <div className="content-area">
             <div className="animated-sections">
               <HomeSection {...sectionProps("home", "start-page")} />
-              <AboutSection {...sectionProps("about-me")} />
-              <ResumeSection {...sectionProps("resume")} />
-              <PortfolioSection {...sectionProps("portfolio")} />
+              <AboutSection {...sectionProps("about")} />
+              <ServicesSection {...sectionProps("services")} />
+              <PortfolioSection {...sectionProps("work")} />
               <ContactSection {...sectionProps("contact")} />
             </div>
           </div>

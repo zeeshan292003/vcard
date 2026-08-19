@@ -2,39 +2,30 @@
 
 import type { SectionProps } from "./SectionProps";
 
-const EDUCATION = [
+const PROCESS = [
   {
-    period: "2011 - 2015",
-    company: "Virtual University of Pakistan",
-    title: "BSCS",
-    text: "Bachelor of Science in Computer Science, Lahore. Strong foundation in software engineering, databases, algorithms, and end-to-end application development.",
-  },
-];
-
-const EXPERIENCE = [
-  {
-    period: "Oct 2019 - Present",
-    company: "Transdata International",
-    title: "Senior Software Engineer",
-    text: "Own full stack delivery on enterprise web and mobile products—React.js, Angular, and Next.js on the client with REST APIs, auth, and real-time features on the backend. Mentor juniors, review code, and ship React Native apps with push notifications and third-party service integrations.",
+    period: "01",
+    company: "Scope",
+    title: "Discover",
+    text: "We start with your goals, users, and constraints—mapping product requirements, integrations, and technical risks so the build has a clear path.",
   },
   {
-    period: "May 2018 - Oct 2019",
-    company: "Hayaat.pk",
-    title: "Full Stack / Angular Developer",
-    text: "Built end-to-end Angular applications from UI through API integration and deployment. Designed reusable modules, connected backend services, handled client-side data flows, and shipped production-ready features across the stack.",
+    period: "02",
+    company: "Experience",
+    title: "Design",
+    text: "We turn the brief into interfaces, flows, and a component plan that matches your brand and works across browsers and devices.",
   },
   {
-    period: "May 2017 - May 2018",
-    company: "CE Digital",
-    title: "Full Stack Web Developer",
-    text: "Delivered complete websites from PSD/Figma to production—responsive HTML/CSS frontends, WordPress backends, theme customization, performance tuning, and SEO-ready implementations for client projects.",
+    period: "03",
+    company: "Product",
+    title: "Build",
+    text: "We ship production web and mobile apps—React, Next.js, Angular, React Native, and Node—with APIs, auth, and third-party services wired in.",
   },
   {
-    period: "May 2015 - May 2017",
-    company: "Brandjaws",
-    title: "Web Developer",
-    text: "Built and maintained full websites with HTML5, Bootstrap, and CMS backends. Customized WordPress themes and plugins, integrated third-party tools, and partnered with SEO teams to keep sites fast and searchable.",
+    period: "04",
+    company: "Delivery",
+    title: "Launch & Support",
+    text: "We release, monitor, and iterate. Store submissions, deployments, documentation, and ongoing fixes stay with the same team that built the product.",
   },
 ];
 
@@ -53,18 +44,18 @@ const BACKEND_SKILLS = [
   { name: "WordPress / Backend", value: 80, skill: "skill-3" },
 ];
 
-const KNOWLEDGES = [
-  "Full Stack Architecture",
-  "Agile / Scrum",
-  "REST & Third-Party APIs",
-  "Authentication Flows",
-  "Database Design",
-  "Cloud Deployments",
-  "Code Review",
-  "Mentoring",
+const DOMAINS = [
+  "Ecommerce",
+  "Healthcare",
+  "Real Estate",
+  "Education",
+  "Payments",
+  "Fashion",
+  "Food & CPG",
+  "On-demand Services",
 ];
 
-function Timeline({ items }: { items: typeof EXPERIENCE }) {
+function Timeline({ items }: { items: typeof PROCESS }) {
   return (
     <div className="timeline timeline-second-style clearfix">
       {items.map((item) => (
@@ -112,35 +103,29 @@ function Skills({
   );
 }
 
-export default function ResumeSection(props: SectionProps) {
+export default function ServicesSection(props: SectionProps) {
   return (
     <section {...props}>
       <div className="page-title">
-        <h2>Resume</h2>
+        <h2>Services</h2>
       </div>
 
       <div className="section-content">
         <div className="row">
           <div className="col-xs-12 col-sm-7">
             <div className="block-title">
-              <h3>Experience</h3>
+              <h3>
+                How We <span>Work</span>
+              </h3>
             </div>
 
-            <Timeline items={EXPERIENCE} />
-
-            <div className="white-space-50"></div>
-
-            <div className="block-title">
-              <h3>Education</h3>
-            </div>
-
-            <Timeline items={EDUCATION} />
+            <Timeline items={PROCESS} />
           </div>
 
           <div className="col-xs-12 col-sm-5">
             <div className="block-title">
               <h3>
-                Frontend <span>Skills</span>
+                Frontend <span>Stack</span>
               </h3>
             </div>
 
@@ -150,7 +135,7 @@ export default function ResumeSection(props: SectionProps) {
 
             <div className="block-title">
               <h3>
-                Backend <span>Skills</span>
+                Backend <span>Stack</span>
               </h3>
             </div>
 
@@ -159,17 +144,16 @@ export default function ResumeSection(props: SectionProps) {
             <div className="white-space-10"></div>
 
             <div className="block-title">
-              <h3>Knowledges</h3>
+              <h3>Industries</h3>
             </div>
 
             <ul className="knowledges">
-              {KNOWLEDGES.map((knowledge) => (
-                <li key={knowledge}>{knowledge}</li>
+              {DOMAINS.map((domain) => (
+                <li key={domain}>{domain}</li>
               ))}
             </ul>
           </div>
         </div>
-
       </div>
     </section>
   );

@@ -4,9 +4,9 @@ import type { SectionId } from "./VCardApp";
 
 const MENU_ITEMS: { id: SectionId; icon: string; label: string }[] = [
   { id: "home", icon: "lnr-home", label: "Home" },
-  { id: "about-me", icon: "lnr-user", label: "About Me" },
-  { id: "resume", icon: "lnr-graduation-hat", label: "Resume" },
-  { id: "portfolio", icon: "lnr-briefcase", label: "Portfolio" },
+  { id: "about", icon: "lnr-user", label: "About" },
+  { id: "services", icon: "lnr-layers", label: "Services" },
+  { id: "work", icon: "lnr-briefcase", label: "Work" },
   { id: "contact", icon: "lnr-envelope", label: "Contact" },
 ];
 
@@ -35,11 +35,11 @@ export default function Header({
     <header id="site_header" className={headerClass}>
       <div className="header-content">
         <div className="header-photo">
-          <img src="/img/main_photo.jpg" alt="Zeeshan Tariq" />
+          <img src="/img/logo.png" alt="ZISHTECH" />
         </div>
         <div className="header-titles">
-          <h2>Zeeshan Tariq</h2>
-          <h4>Full Stack Developer</h4>
+          <h2>ZISHTECH</h2>
+          <h4>Software Studio</h4>
         </div>
       </div>
 
@@ -92,7 +92,7 @@ export default function Header({
         </a>
       </div> */}
 
-      <div className="copyrights">© 2026 All rights reserved.</div>
+      <div className="copyrights">© 2026 ZISHTECH. All rights reserved.</div>
     </header>
   );
 }

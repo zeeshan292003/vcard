@@ -87,12 +87,17 @@ export default function PortfolioSection(props: SectionProps) {
   return (
     <section {...props}>
       <div className="page-title">
-        <h2>Portfolio</h2>
+        <h2>Work</h2>
       </div>
 
       <div className="section-content">
         <div className="row">
           <div className="col-xs-12 col-sm-12">
+            <p>
+              Selected client work across ecommerce, healthcare, real estate,
+              education, and product platforms.
+            </p>
+            <div className="white-space-30"></div>
             {/* Portfolio Content */}
             <div className="portfolio-content">
               {/* Portfolio Grid */}

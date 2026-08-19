@@ -75,10 +75,10 @@ export async function sendContactEmail(data: ContactFormPayload) {
   });
 
   await transporter.sendMail({
-    from: `"Portfolio Contact" <${smtpUser}>`,
+    from: `"ZISHTECH Contact" <${smtpUser}>`,
     to: CONTACT_TO,
     replyTo: data.email,
-    subject: `[Portfolio Contact] ${data.subject}`,
+    subject: `[ZISHTECH Contact] ${data.subject}`,
     text: [
       `Name: ${data.name}`,
       `Email: ${data.email}`,
